@@ -97,7 +97,7 @@ public class Start {
         Random random = new Random();
         // Jouer au  jeu
         init();
-        while (joueurs.get(joueurs.size() - 1).size() != 0) {
+        while (joueurs.get(joueurs.size()).size() != 0) {
             game();
         }
         List<Integer> scores = new ArrayList<>();
