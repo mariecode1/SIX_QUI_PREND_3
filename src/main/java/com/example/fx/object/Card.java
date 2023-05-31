@@ -11,17 +11,21 @@ import java.util.List;
 public class Card {
     private int Num_card;
     private int nbrTaureau;
+    private String pictureURL;
+
 
     public static List<Card> cartes = new ArrayList<>();
     public static List<Card> AllcarteV = new ArrayList<>();
     public static List<Card> Allcarte = new ArrayList<>();
 
-    public Card(int n, int num) {
+    public Card(int n, int num,String pictureURL) {
         Num_card = n;
         nbrTaureau = num;
+        this.pictureURL = pictureURL;
+
     }
 
-    public static int taureau(int Num_card, int i) {
+    public static int taureau(int Num_card, int i, String pictureURL) {
         if (Num_card % 10 == 5) {
             cartes.get(i - 1).setNbrTaureau(cartes.get(i - 1).getNbrTaureau() + 2);
         }
@@ -51,4 +55,12 @@ public class Card {
 
         return cartes;
     }
+
+    // Method to get the image path for the card image.
+    public String getImagePath(Card card) {
+        // Returns a constructed string that presumably points to where the card's image is stored.
+        // The card's number is used as part of the file path.
+        return "file:src/main/resources/cards/" + card.getNum_card() +".png";
+    }
+
 }

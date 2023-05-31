@@ -15,7 +15,7 @@ import static com.example.fx.object.Card.cartes;
 
 public class Method {
     static Scanner sc = new Scanner(System.in);
-    public static Card Card0 = new Card(0, 0);
+    public static Card Card0 = new Card(0, 0,null);
     public static int nbr_joueur;
     public static Card[][] rangees ;
     public static void afficherElementPlusPetit(List<Integer> liste) {
