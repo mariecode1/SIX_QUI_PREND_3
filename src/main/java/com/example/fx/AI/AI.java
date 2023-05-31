@@ -71,7 +71,7 @@ public class AI {
         ScoreV.clear();
         int pointV = 0;
         for (int j = 0; j<joueursPliV.get(joueurs.joueurs.size()-1).size();j++){
-            pointV += joueursPliV.get(joueurs.joueurs.size()-1).get(j).getNbrTaureau();
+            pointV += joueursPliV.get(joueurs.joueurs.size()-1).get(j).getNbTaureau();
         }
         return pointV;
     }

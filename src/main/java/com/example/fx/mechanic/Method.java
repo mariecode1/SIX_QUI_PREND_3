@@ -43,7 +43,7 @@ public class Method {
     public static void show(int i){
         System.out.println("\nMain Joueur " + (i + 1) + " : \n");
         for (int j =0;j<joueurs.get(i).size();j++) {
-            System.out.println((j+1) + ". num Carte : " + joueurs.get(i).get(j).getNum_card() + "          nbr taureau : " + joueurs.get(i).get(j).getNbrTaureau());
+            System.out.println((j+1) + ". num Carte : " + joueurs.get(i).get(j).getNum_card() + "          nbr taureau : " + joueurs.get(i).get(j).getNbTaureau());
         }
     }
     public static void Initplateau() {
@@ -81,12 +81,12 @@ public class Method {
                     code+=1;
                     top += "   |    col " + (j+1) + "    |";
                     middle += "       | num " + rangees[i][j].getNum_card() + " |";
-                    bottom += "       | tau " + rangees[i][j].getNbrTaureau() + " |  ";
+                    bottom += "       | tau " + rangees[i][j].getNbTaureau() + " |  ";
                 }
                 else {
                     top += "   |    col " + (j+1) + "    |";
                     middle += "       | num " + rangees[i][j].getNum_card() + " |";
-                    bottom += "       | tau " + rangees[i][j].getNbrTaureau() + " |  ";
+                    bottom += "       | tau " + rangees[i][j].getNbTaureau() + " |  ";
                 }
 
             }

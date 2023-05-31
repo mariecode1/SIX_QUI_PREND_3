@@ -104,7 +104,7 @@ public class Start {
         for (int i = 0;i<joueurs.size();i++){
             int point = 0;
             for (int j = 0; j<joueursPli.get(i).size();j++){
-                point += joueursPli.get(i).get(j).getNbrTaureau();
+                point += joueursPli.get(i).get(j).getNbTaureau();
             }
             Score.add(point);
             System.out.println("Nombre de taureau joueurs " + i + " : " + point);

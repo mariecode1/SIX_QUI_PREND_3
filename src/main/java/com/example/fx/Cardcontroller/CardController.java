@@ -39,12 +39,12 @@ public class CardController implements Initializable {
 
     private void updateCardView() {
         numberLabel.setText(String.valueOf(card.getNum_card()));
-        taureauLabel.setText(String.valueOf(card.getNbrTaureau()));
+        taureauLabel.setText(String.valueOf(card.getNbTaureau()));
         setColorBasedOnTaureau();
     }
 
     private void setColorBasedOnTaureau() {
-        int taureau = card.getNbrTaureau();
+        int taureau = card.getNbTaureau();
         if (taureau < 2) {
             cardPane.setStyle("-fx-background-color: green;");
         } else if (taureau < 4) {
